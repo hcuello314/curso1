@@ -1,0 +1,24 @@
+Algoritmo Enc8Ej1
+	Definir clave Como Caracter
+	Definir cont Como Entero
+	cont=0
+	Escribir "Ingreso al sistema"
+	
+	Hacer
+		Escribir "Ingrese una clave"
+		leer clave
+		
+		Si clave = "eureca"
+			Escribir "Ingresó al sistema correctamente"
+			cont=3
+		SiNo
+			Escribir "Error"
+		FinSi
+		cont=cont+1
+	Mientras Que cont<3
+	
+	Si clave<>"eureca" Entonces
+		Escribir "Excedió la cantidad de intentos de ingreso"
+	FinSi
+	
+FinAlgoritmo

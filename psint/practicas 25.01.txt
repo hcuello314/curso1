@@ -1,0 +1,128 @@
+PRACTICA_CONDICIONAL_SI	
+Definir bandera Como Logico	
+bandera = 2>1	
+Si bandera = 2>1 Entonces		
+Escribir "La condición es: ", bandera  " por lo tanto la ejecución entra en la estructura selectiva Si y ejecuta esta línea "
+
+						
+Fin SiFinAlgoritmo
+
+
+
+/Un hombre desea saber si su sueldo es mayor al sueldo mínimo, el programa le pedirá al
+//usuario su sueldo actual y el sueldo mínimo. Si el sueldo es mayor al mínimo se debe
+//mostrar un mensaje por pantalla indicándolo.
+Algoritmo Sueldo_Minimo	
+	
+Definir sueldo, sueldoM Como Real
+sueldoM = 65.427	
+Escribir "Ingrese su sueldo actual: "	
+Leer sueldo		
+Si sueldo > sueldoM Entonces		
+Escribir "Su sueldo supera el mínimo"	
+SiNo		Escribir "Su sueldo no supera el minimo"	
+	Fin Si		
+FinAlgoritmo
+
+
+//Construir un pseudocódigo que permita ingresar un número, si el número es mayor de	
+//500, se debe calcular y mostrar en pantalla el 18% de este.
+Algoritmo NumeroMayor_Porcetaje18		
+Definir num, porcentaje Como Real		
+Escribir "Ingrese un número: "	
+Leer num		
+Si num > 500 Entonces		
+porcentaje = num*0.18		
+Escribir "el 18% del numero ingresado es: ", porcentaje
+SiNo		
+Escribir "El numero:" num  " no es mayor a 500"
+Fin Si		
+FinAlgoritmo
+
+//Se pide ingresar una letra del alfabeto y mostrar si dicha letra es vocal o consonante.
+Algoritmo Letra_Vocal_Consonante		
+Definir letra Como Caracter		
+Escribir "Ingrese una letra: "
+Leer letr	
+Si letra = "a" o letra = "e" o letra = "i" o letra = "o" o letra = "u" Entonces				
+Escribir "Ingresaste una vocal"	SiNo		
+Escribir "Ingresaste una consonante"		
+Fin Si		
+FinAlgoritmo
+
+
+//Diseñe un algoritmo que lea un número de tres cifras y determine si es o no capicúa.
+Algoritmo EjercicioCapicua		
+Definir num, uni, dec, cen Como real	
+Imprimir "ingrese un numero de tres digitos"	
+leer num	
+Si num >99 y num < 1000 Entonces		
+uni <- num mod 10;	
+num <- trunc(num/10);	
+dec <- num mod 10;	
+num <- trunc(num/10);	
+cen <- num mod 10;	
+Si uni = cen Entonces		
+Escribir "El numero de 3 cifras ES capicua"	
+SiNo		
+Escribir "El numero NO es capicua"	
+FinSiSiNo	
+Escribir "El numero ingresado NO es de 3 crifras"
+Fin Si
+
+
+//Crea una aplicación que nos pida un día de la semana y que nos diga si es un dia laboral o//no
+Algoritmo EjerciciodIALABORAL			
+Definir dia Como Caracter		
+Leer dia		
+Si dia = "lunes" o dia = "martes" o dia = "miercoles" o dia = "jueves" o dia = "viernes" o dia = "sabado" o dia = "domingo" Entonces				
+Si dia = "sabado" o dia = "domingo" Entonces			
+Escribir "No es un dia laborable"		
+SiNo			
+Escribir " Es un dia laborable"					
+FinSi		
+SiNo		Escribir "No escribio un dia"	
+FinSi		
+
+finAlgoritmo
+
+
+
+//"¡Hola! Muchas gracias por cubrirme. Lo principal que debes hacer es completar la hoja//
+de cálculo de ingresos mensuales. Puedes hacerlo buscando los últimos ingresos//
+publicitarios en los informes de marketing. 
+//Después de hacer todo eso, revisa mi correo//
+electrónico y si hay menos de 10 correos sin leer revisa mi correo de voz para ver si hay
+//alguna solicitud de los ejecutivos. Si hay tales solicitudes, hágalas primero a menos que
+//tenga una solicitud de emergencia de otro departamento. Una vez que hayas terminado//
+con la solicitud de cumplimiento, riegue la planta de mi escritorio después de apagar la//
+computadora. Ah, espera, debería haber mencionado un par de cosas: debes iniciar//
+sesión con usuario de administrador para ver los informes de marketing, y tendrás que//
+enviarme un correo electrónico de actualización justo después de que termines de//
+manejar las solicitudes. Bueno, gracias de nuevo. ¡Es de gran ayuda! Te debo el almuerzo//
+cuando regrese." [Continua en la siguiente página]//
+Por ejemplo://cantidadEmails = 6//solicitudesEjecutivos = 3
+Algoritmo Tareas_principales	
+Definir cantidadEmails, solicitudesEjecutivos, Solicitud, solicitudEmergencia Como Entero	
+Escribir "1ro Iniciar sesión con usuario administrador y ver informes de Marketing"	
+Escribir "2do - completar la hoja de cálculo de ingresos mensuales"	
+Escribir "3ro - revisar e ingresar la cantidad de emails no leidos"	
+Leer cantidadEmails	Si cantidadEmails < 10 Entonces		
+Escribir "4to - Revisar correo de voz"		
+Escribir "Cuantas solicitudes de ejecutivos hay?"		
+leer solicitudesEjecutivos		
+Si solicitudesEjecutivos > 0 Entonces			
+Escribir "Cuantas solicitudes de emergencia hay?"			
+leer solicitudEmergencia			
+Si solicitudEmergencia > 0 Entonces				
+Escribir "5to op a - Ejecutar solicitud de emergencia"				
+Escribir "5to op b - Ejecutar solicitud ejecutiva"							
+SiNo				
+Escribir "5to op b - Ejecutar solicitud ejecutiva"			
+FinSi			
+Escribir "Mandar correo de actualizacion"						
+FinSi	FinSi			
+Escribir"Apagar compu y regar planta del escritorio"	
+Escribir "La cantidad de emails son: " , cantidadEmails	
+Escribir "La cantidad de solicitudes son: " , solicitudesEjecutivos	
+FinAlgoritmo
